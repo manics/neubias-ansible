@@ -1,0 +1,14 @@
+# OMERO single-node deployment
+
+- hosts: omero-allinone
+  roles:
+    - role: openmicroscopy.postgresql
+    - role: openmicroscopy.omero-server
+    - role: openmicroscopy.omero-web
+
+  vars:
+    postgresql_users_databases:
+    - user: omero
+      password: omero
+      databases: [omero]
+    postgresql_version: "9.6"

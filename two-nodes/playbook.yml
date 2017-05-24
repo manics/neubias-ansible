@@ -26,4 +26,3 @@
 
   vars:
     omero_server_dbhost: "{{ hostvars['omero-database'].ansible_eth0.ipv4.address }}"
-    ice_python_wheel: http://users.openmicroscopy.org.uk/~spli/centos-zeroc-ice-py/dist/zeroc_ice-3.6.3-cp27-cp27mu-linux_x86_64.whl

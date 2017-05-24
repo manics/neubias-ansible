@@ -13,3 +13,9 @@ likely you will want to copy the configuration into your own playbooks.
 - Install `ansible`: e.g. `pip install ansible`
 - Install roles: `ansible-galaxy install -r requirements.yml -p roles`
 - Install OMERO server and setup public user: `ansible-playbook playbook.yml`
+
+
+Other examples
+--------------
+
+This repository also contains two other example playbooks for deploying OMERO with a database, either on the same [`allinone/playbook.yml`](allinone/playbook.yml) or a separate [`two-nodes/playbook.yml`](two-node/playbook.yml) node.
